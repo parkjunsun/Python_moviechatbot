@@ -7,13 +7,12 @@ from bs4 import BeautifulSoup
 from apscheduler.schedulers.blocking import BlockingScheduler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from data_cgv import data
+from application import IMAX_TOKEN, CHAT_ID 
 
 imax_theaters = []
-TOKEN = '1139254201:AAEnEm7lLz3SCfxT9IhaHYzG61_40VHXfW0'
-CHAT_ID = '1197755619'
 
 
-bot = telegram.Bot(token = TOKEN)
+bot = telegram.Bot(token = IMAX_TOKEN)
 
 s = set()
 
@@ -25,7 +24,6 @@ def notice():
     bot.sendMessage(CHAT_ID, text = "수도권내 IMAX상영관 목록입니다.\n" + string)
     bot.sendMessage(CHAT_ID, text = "<<위 영화관들의 IMAX개봉시 알람이 울리게 됩니다.>>\n *챗봇방 오류시 문의: qkrwnstns52@naver.com") 
     
-
 
 
 
