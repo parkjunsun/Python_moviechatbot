@@ -105,14 +105,6 @@ class LotteCinema(object):
 
 
 
-#print(c.get_movie_list('1|43|3018'))
-
-#print(c.filter_nearest_theater(c.get_theater_list(), 37.5, 126.844))
-
-#movie_id_to_info = c.get_movie_list('1|3|3027')
-#movie_schedules = []
-#text = '{}의 상영시간표입니다.\n\n'.format('롯데시네마')
-#string = ""
 
 class MegaBox(object):
     base_url = 'https://www.megabox.co.kr/on/oh/ohc/Brch/schedulePage.do'
