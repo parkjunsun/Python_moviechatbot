@@ -10,9 +10,8 @@ from movies import BoxOffice
 from movies import CGV
 from data_cgv import data
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from application import GOOGLE_API, MOVIE_API, CHAT_ID, CGV_TOKEN
 
-TOKEN = '1232910624:AAE6XNGREcnUGi3X6v8mDHnH70Gp1pffRUo'
-CHAT_ID = '1197755619'
 welcome_msg = '반가워요.\n\n 저는 요즘 볼만한 영화들을 알려드리고, 현재 계신 곳에서 가까운 영화관들의 상영시간표를 알려드려요.\n\n'\
               "'영화순위' , '근처 상영관 찾기', '예매하기', '길 찾기'를 입력해보세요"
 error_msg = '잘 모르겠네요.\n\n'\
@@ -20,13 +19,11 @@ error_msg = '잘 모르겠네요.\n\n'\
             '현재 계신 곳에서 가까운 CGV 영화관들의 상영시간표를 알려드려요.\n\n'\
             "'영화순위' , '근처 상영관 찾기' , '예매하기', '길 찾기'를 입력해보세요."
 
-api_key = '772a77a99609fbe7310a45d116355ee1'
-GOOGLE_API = 'AIzaSyBpA-KgsaVfDRbo5LI__ylBv3dUQ68dQkQ'
-bot = telegram.Bot(token = TOKEN)
+bot = telegram.Bot(token = CGV_TOKEN)
 flag = 0
 
 def send_box_office(chat_id):
-    box = BoxOffice(api_key)
+    box = BoxOffice(MOVIE_API)
     movies = box.simplify(box.get_movies())
     rank_message = '\n'.join(['{}. {}'.format(m['rank'], m['name']) for m in movies])
     response = '요즘 볼만한 영화들의 순위입니다\n{}'.format(rank_message)
@@ -183,7 +180,7 @@ def request(url):
     return text_data
 
 def build_url(method, query):
-    return 'https://api.telegram.org/bot{}/{}?{}'.format(TOKEN,method,query)
+    return 'https://api.telegram.org/bot{}/{}?{}'.format(CGV_TOKEN,method,query)
 
 def request_to_chatbot_api(method, query):
     url = build_url(method, query)
