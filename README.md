@@ -10,14 +10,14 @@
 ***
 
 ## 📺 시연영상
-롯데시네마 채팅방입니다. (CGV, 메가박스도 동일합니다)
+### ✅ 롯데시네마 채팅방입니다. (CGV, 메가박스도 동일합니다)
 
 <img src = "https://user-images.githubusercontent.com/50009692/128194624-49cb8c1e-f250-4c45-9b26-4d7c7f05d235.gif">
 
 ***
 
 ## ⛏ Installation & Execution (Ubuntu16.04 기준)
-* 라이브러리 설치
+* #### ✅ 라이브러리 설치
 ```
 apt-get install -y python3
 apt-get install -y python3-pip
@@ -26,7 +26,7 @@ pip3 install python-telegram-bot
 pip3 install beautifulsoup4
 pip3 install lxml
 ```
-* bot_exe.sh 작성 (3사 영화관 봇을 같이 실행하기 위한 쉘 스크립트)　　　　**‼ chmod +x bot_exe.sh 으로 실행권한 주기**
+* #### ✅ bot_exe.sh 작성 (3사 영화관 봇을 같이 실행하기 위한 쉘 스크립트)　　　　**‼ chmod +x bot_exe.sh 으로 실행권한 주기**
 ```bash
 #!/bin/sh
 python3 LotteCinema_bot.py & (절대경로로 나타내야함)
@@ -34,11 +34,11 @@ python3 MegaBox_bot.py &
 python3 CGV_bot.py &   
 python3 imax_alarm_bot.py (마지막부분은 & 백그라운드 실행하면안됨)
 ```
-* 실행
+* #### ✅ 실행
 ```
 3사 영화관 채팅 봇 동시 실행 -> ./bot_exe.sh
-롯데시네마 단일 실행 -> python3 LotteCinema_bot.py
-메가박스 단일 실행 -> python3 MegaBox.py
-CGV 단일 실행 -> python3 CGV_bot.py
-IMAX 알람 봇 실행 -> python3 imax_alarm_bot.py &
+롯데시네마 단일 실행 ▶ python3 LotteCinema_bot.py
+메가박스 단일 실행 ▶ python3 MegaBox.py
+CGV 단일 실행 ▶ python3 CGV_bot.py
+IMAX 알람 봇 실행 ▶ python3 imax_alarm_bot.py &
 ```
