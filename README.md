@@ -42,3 +42,25 @@ python3 imax_alarm_bot.py (마지막부분은 & 백그라운드 실행하면안�
 CGV 단일 실행 ▶ python3 CGV_bot.py
 IMAX 알람 봇 실행 ▶ python3 imax_alarm_bot.py &
 ```
+
+***
+
+## ⚙ 환결성정
+* #### 사용 API
+> 영화 진흥위원회 API (<https://www.kobis.or.kr/kobisopenapi/homepg/main/main.do>)
+> 
+> GOOGLE DIRECTIONS API (<https://developers.google.com/maps/documentation/directions/overview>)
+> 
+> Telegram Bot API (<https://core.telegram.org/bots/api>)
+* #### Appication.py 　　　　**‼ gitignore사용**
+```python
+MOVIE_API = '영화 진흥위원회 API'
+GOOGLE_API = 'google directions API'
+CHAT_ID = 'Telegram Bot Chat Bot API'
+
+CGV_TOKEN = 'CGV 채팅방 TOKEN'
+LOTTE_TOKEN = 'LOTTE 시네마 채팅방 TOKEN'
+MEGA_TOKEN = 'MEGABOX 채팅방 TOKEN'
+IMAX_TOKEN = 'IMAX알림 채팅방 TOKEN'
+
+```
