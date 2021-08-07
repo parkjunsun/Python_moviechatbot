@@ -16,6 +16,12 @@
 
 ***
 
+## ⚒ 기술스택
+<img src="https://user-images.githubusercontent.com/50009692/128604880-0889934f-12d4-4655-8a35-8ef4bd15fc0b.PNG" height="100">
+<img src="https://user-images.githubusercontent.com/50009692/128604894-eb940021-3061-42ce-85eb-189b2bc146a7.PNG" height="100">
+
+***
+
 ## ⛏ Installation & Execution (Ubuntu16.04 기준)
 * #### ✅ 라이브러리 설치
 ```
