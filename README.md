@@ -53,7 +53,7 @@ IMAX 알람 봇 실행 ▶ python3 imax_alarm_bot.py &
 <br><br>
 
 ## ⚙ 환결성정
-* #### 사용 API
+* #### API
 > 영화 진흥위원회 API (<https://www.kobis.or.kr/kobisopenapi/homepg/main/main.do>)
 > 
 > GOOGLE DIRECTIONS API (<https://developers.google.com/maps/documentation/directions/overview>)
